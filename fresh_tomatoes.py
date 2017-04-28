@@ -14,7 +14,7 @@ main_page_head = '''
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <style type="text/css" media="screen">
         body {
@@ -80,7 +80,18 @@ main_page_head = '''
           $('.movie-tile').hide().first().show("fast", function showNext() {
             $(this).next("div").show("fast", showNext);
           });
+          // Display storyline
+          $(document).on('mouseover', '.movie-tile', function (event) {
+              var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
+              $('#'+trailerYouTubeId+'_storyline').css('visibility','visible');
+          });
+          // Hide storyline
+          $(document).on('mouseout', '.movie-tile', function (event) {
+              var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
+              $('#'+trailerYouTubeId+'_storyline').css('visibility','hidden');
+          });
         });
+        
     </script>
 </head>
 '''
@@ -126,6 +137,7 @@ movie_tile_content = '''
     <img src="{poster_image_url}" width="220" height="342">
     <h3>{movie_title}</h3>
     <p>{year}</p>
+    <p id="{trailer_youtube_id}_storyline" style="visibility:hidden;">{storyline}</p>
 </div>
 '''
 
@@ -147,7 +159,8 @@ def create_movie_tiles_content(movies):
             movie_title=movie.title,
             poster_image_url=movie.poster_image_url,
             trailer_youtube_id=trailer_youtube_id,
-            year=movie.year
+            year=movie.year,
+            storyline=movie.storyline
         )
     return content
 
