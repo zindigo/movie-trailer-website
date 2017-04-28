@@ -9,13 +9,13 @@ you = media.Movie("You Can't Take It With You",
                      "1938")
 
 gone = media.Movie("Gone With The Wind",
-                     "A strong-willed woman puruses romance in the American South during the American Civil War and Reconstruction periods.",
+                     "A strong-willed woman puruses romance in the American South during the American Civil War.",
                      "https://images-na.ssl-images-amazon.com/images/M/MV5BYWQwOWVkMGItMDU2Yy00YjIzLWJkMjEtNmVkZjE3MjMwYzEzXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR0,0,652,1000_AL_.jpg",
                      "https://www.youtube.com/watch?v=h2oX0zQA67U",
                      "1939")
 
 rebecca = media.Movie("Rebecca",
-                     "A young bride is intimidated by her husband's first wife who had passed away.",
+                     "A young bride is intimidated by her husband's dead first wife.",
                      "https://images-na.ssl-images-amazon.com/images/M/MV5BYTcxYWExOTMtMWFmYy00ZjgzLWI0YjktNWEzYzJkZTg0NDdmL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SY1000_CR0,0,696,1000_AL_.jpg",
                      "https://www.youtube.com/watch?v=d9eWjSt1VQw",
                      "1940")
