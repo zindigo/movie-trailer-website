@@ -1,6 +1,7 @@
 import fresh_tomatoes
 import media
 
+# Populate movies
 you = media.Movie("You Can't Take It With You",
                      "A young couple becomes engaged but they have to learn to cope with his rich parents and her eccentric family.",
                      "https://images-na.ssl-images-amazon.com/images/M/MV5BOGMxZTMwNmQtOWIwMC00ZjFlLTllNGQtYTlkZWU5OGMyMzkxXkEyXkFqcGdeQXVyNzQzNDEyOQ@@._V1_.jpg",
