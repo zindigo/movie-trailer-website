@@ -3,7 +3,7 @@ import media
 
 # Populate movies
 you = media.Movie("You Can't Take It With You",
-                     "A young couple becomes engaged but they have to learn to cope with his rich parents and her eccentric family.",
+                     "A young couple becomes engaged as she discovers his rich parents and he discovers her eccentric family.",
                      "https://images-na.ssl-images-amazon.com/images/M/MV5BOGMxZTMwNmQtOWIwMC00ZjFlLTllNGQtYTlkZWU5OGMyMzkxXkEyXkFqcGdeQXVyNzQzNDEyOQ@@._V1_.jpg",
                      "https://www.youtube.com/watch?v=0WY9RAroTS0",
                      "1938")
