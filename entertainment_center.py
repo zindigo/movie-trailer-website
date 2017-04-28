@@ -15,7 +15,7 @@ gone = media.Movie("Gone With The Wind",
                      "1939")
 
 rebecca = media.Movie("Rebecca",
-                     "A young bride is intimidated by her husband's dead first wife.",
+                     "A young bride is intimidated by the belongings of her husband's dead first wife.",
                      "https://images-na.ssl-images-amazon.com/images/M/MV5BYTcxYWExOTMtMWFmYy00ZjgzLWI0YjktNWEzYzJkZTg0NDdmL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SY1000_CR0,0,696,1000_AL_.jpg",
                      "https://www.youtube.com/watch?v=d9eWjSt1VQw",
                      "1940")
