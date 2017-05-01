@@ -1,5 +1,6 @@
+# StarterCode
 
-It creates an html file that displays clickable movie posters. Clicking the movie poster will display the movie's trailer in a modal window.
+This is a python script for a movie trailer website. It creates an html file that displays clickable movie posters. Clicking the movie poster will display the movie's trailer in a modal window.
 
 
 # Installation
